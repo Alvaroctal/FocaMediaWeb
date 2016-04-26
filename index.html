@@ -1,29 +1,3 @@
-
-Skip to content
-This repository
-
-    Pull requests
-    Issues
-    Gist
-
-    @LuisIniguez
-
-3
-0
-
-    0
-
-Alvaroctal/FocaMediaWeb
-Code
-Issues 0
-Pull requests 0
-Wiki
-Pulse
-Graphs
-FocaMediaWeb/index.html
-3473dcc 16 hours ago
-@Alvaroctal Alvaroctal Minor fix
-45 lines (39 sloc) 1.62 KB
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,6 +5,25 @@ FocaMediaWeb/index.html
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-icons.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-schemes.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+    <style type="text/css">
+        #front-container {
+            color: #F1F1F1;
+            padding-top: 110px;
+            text-align: center;
+        }
+        .panel {
+            text-align: left;
+        }
+        .panel .content p {
+            font-size: 16px;
+            margin-top: 0px;
+            min-height: 60px;
+        }
+        #row-donation {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
@@ -41,7 +34,6 @@ FocaMediaWeb/index.html
             <a class="app-bar-element" href="/foca/">FocaMedia</a>
             <span class="app-bar-divider"></span>
             <ul class="app-bar-menu">
-                <!--<li><a href="">Home</a></li>-->
                 <li>
                     <a href="" class="dropdown-toggle">How it works</a>
                     <ul class="d-menu" data-role="dropdown">
@@ -55,50 +47,85 @@ FocaMediaWeb/index.html
 
     <!-- Content -->
 
-    <div class="container page-content">
-        <div class="bg-lightBlue fg-white align-center">
-            <div class="container">
-                <div class="no-overflow" style="padding-top: 40px">
 
-                </div>
-            </div>
-        </div>
+    <div id="front-container" class="container page-content">
 
-        <!-- Main content-->
-        
-        <div class = "grid" style = "padding-top: 10%">
-        
-        <!-- FocaMedia icon-->
-            <div class = "row cells2">
-                <div class = "cell">
-                    <img src="FocaMedia-title.jpg" style = "padding-left: 10%">
-                </div>
-        
-        <!-- Download Buttons-->
-                <div class = "cell">
-                    <div class = "align-center">
-                        <ol class="numeric-list square-marker large-bull">
-                        <li>
-                            Get our server to share all the media you want<p></p>
-                            <button class = "button primary">Download Server</button>
-                        </li>
-                        <li>
-                        </li>
-                            Get the client to take the shared media<p></p>
-                            <button class = "button primary">Download Client</button>
-                        </ol>
+        <div class="no-overflow">
+
+            <h1 style="font-size: 4.5rem; line-height: 1" class="text-shadow metro-title text-light">FocaMedia</h1>
+            <h2 class="padding30 sub-leader text-light fg-grayLighter">
+                A grafical easy to use media library, that allows you to view your content even in your movile!
+            </h2>
+
+            <div class="grid">
+                <div class="row cells2">
+                    <div class = "cell">
+                        <div class="panel warning">
+                            <div class="heading">
+                                <span class="icon mif-display bg-darkOrange"></span>
+                                <span class="title">Desktop / Server</span>
+                            </div>
+                            <div class="content padding10">
+                                <p>A graphical electron based application that crawls through your media library, recognises and compares the data with <a href="https://themoviedb.com">The Movie Database</a> API.</p>
+                                <a href="#" class="image-button primary">
+                                    Windows
+                                    <span class="icon mif-windows bg-darkCobalt"></span>
+                                </a>
+                                <a href="#" class="image-button primary">
+                                    Mac OSX
+                                    <span class="icon mif-apple bg-darkCobalt"></span>
+                                </a>
+                                <a href="#" class="image-button primary">
+                                    Linux
+                                    <span class="icon mif-linux bg-darkCobalt"></span>
+                                </a>
+                                <a href="https://github.com/Alvaroctal/FocaMediaServer" class="image-button bg-indigo fg-white place-right">
+                                    GitHub
+                                    <span class="icon mif-github bg-darkIndigo"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="panel success">
+                            <div class="heading">
+                                <span class="icon mif-display bg-emerald"></span>
+                                <span class="title">Mobile app</span>
+                            </div>
+                            <div class="content padding10">
+                                <p>A ionic implementation for client side, allows you to see in streaming your content.</p>
+                                <a href="#" class="image-button primary">
+                                    Android
+                                    <span class="icon mif-android bg-darkCobalt"></span>
+                                </a>
+                                <a href="#" class="image-button primary">
+                                    iPhone
+                                    <span class="icon mif-apple bg-darkCobalt"></span>
+                                </a>
+                                <a href="https://github.com/Alvaroctal/FocaMedia" class="image-button bg-indigo fg-white place-right">
+                                    GitHub
+                                    <span class="icon mif-github bg-darkIndigo"></span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div id="row-donation" class="row margin40">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="9ZUNTXTD9VQV4">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+                </form>
+            </div>
         </div>
     
-    
         <!-- caracteristics -->
-        <div class ="tile-container no-margin-bottom" style = "padding-top: 10%">
+        <!--<div class ="tile-container no-margin-bottom" style = "padding-top: 10%">
             <div class = "tile-wide bg-grayDark fg-grayLight" data-role ="tile">
                 <div class = "tile-content slide-right-2">
                     <div class = "slide">
-                        <!-- Imagen caracteristica xaxi 1 -->
                     </div>
                     <div class = "slide-over">
                         FocaMedia allows you to share all the media you want with the people around you
@@ -111,7 +138,6 @@ FocaMediaWeb/index.html
             <div class = "tile-wide bg-grayDark fg-grayLight" data-role ="tile">
                 <div class = "tile-content slide-right-2">
                     <div class = "slide">
-                        <!-- Imagen caracteristica xaxi 2 -->
                     </div>
                     <div class = "slide-over">
                         FocaMedia works with Windows, IOS, Linux, Android and WindowsPhone
@@ -124,7 +150,6 @@ FocaMediaWeb/index.html
             <div class = "tile-wide bg-grayDark fg-grayLight" data-role ="tile">
                 <div class = "tile-content slide-right-2">
                     <div class = "slide">
-                        <!-- Imagen caracteristica xaxi 3 -->
                     </div>
                     <div class = "slide-over">
                         FocaMedia is easy to configure and intuitive to use
@@ -134,15 +159,10 @@ FocaMediaWeb/index.html
                     </span>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
 </body>
 </html>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 <script type="text/javascript" src="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/js/metro.min.js"></script>
-
-    Status API Training Shop Blog About 
-
-    © 2016 GitHub, Inc. Terms Privacy Security Contact Help 
-
