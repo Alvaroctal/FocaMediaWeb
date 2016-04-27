@@ -1,9 +1,10 @@
 /* APP CSS */
 
 html {
-    background-image: url('../../assets/images/background.jpeg'); 
+    background-image: url('/foca/assets/images/background.jpeg'); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-attachment: fixed
 }
