@@ -8,7 +8,7 @@
               </div>
               <div class="cell colspan7">
                   <div class="image-container">
-                      <div class="frame"><img src="https://cloud.githubusercontent.com/assets/4562922/14845442/8464d2ce-0c5e-11e6-9ae2-e0bc2b41009b.png"></div>
+                      <div class="frame"><img src="https://cloud.githubusercontent.com/assets/15236638/15544346/98eebcbe-2298-11e6-859f-0a8d77e1793c.jpg"></div>
                       <div class="image-overlay">
                           <h2>Connect</h2>
                           <p>
@@ -21,7 +21,7 @@
           <div class="row cells12">
               <div class="cell colspan7">
                   <div class="image-container">
-                      <div class="frame"><img src="https://cloud.githubusercontent.com/assets/4562922/14846608/f1558170-0c64-11e6-9c57-be9a6c16be0a.png"></div>
+                      <div class="frame"><img src="https://cloud.githubusercontent.com/assets/15236638/15544393/c3a76348-2298-11e6-9ed5-04c852c3222b.jpg"></div>
                       <div class="image-overlay">
                           <h2>Browse your media</h2>
                           <p>
@@ -43,7 +43,7 @@
               </div>
               <div class="cell colspan7">
                   <div class="image-container">
-                      <div class="frame"><img src="https://cloud.githubusercontent.com/assets/4562922/14845442/8464d2ce-0c5e-11e6-9ae2-e0bc2b41009b.png"></div>
+                      <div class="frame"><img src="https://cloud.githubusercontent.com/assets/15236638/15544404/d29447f4-2298-11e6-82fe-9dedf66f1b5a.jpg"></div>
                       <div class="image-overlay">
                           <h2>Info, trailers and more</h2>
                           <p>
@@ -56,7 +56,7 @@
           <div class="row cells12">
               <div class="cell colspan7">
                   <div class="image-container">
-                      <div class="frame"><img src="https://cloud.githubusercontent.com/assets/4562922/14846608/f1558170-0c64-11e6-9c57-be9a6c16be0a.png"></div>
+                      <div class="frame"><img src="https://cloud.githubusercontent.com/assets/15236638/15544416/e2be1768-2298-11e6-8e99-b92f34fb3ede.jpg"></div>
                       <div class="image-overlay">
                           <h2>Looking for something?</h2>
                           <p>You type it, you get it.</p>
@@ -81,7 +81,7 @@
               </div>
               <div class="cell colspan7">
                   <div class="image-container">
-                      <div class="frame"><img src="https://cloud.githubusercontent.com/assets/4562922/14845442/8464d2ce-0c5e-11e6-9ae2-e0bc2b41009b.png"></div>
+                      <div class="frame"><img src="https://cloud.githubusercontent.com/assets/15236638/15544435/f5cd0256-2298-11e6-9677-7b696be4bac5.jpg"></div>
                       <div class="image-overlay">
                           <h2>Your media</h2>
                           <p>
