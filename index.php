@@ -12,7 +12,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>FocaMedia</title>
+    <title>Foca MediaCenter</title>
     <meta name="description" content="FocaMedia a multiplatform media library in streaming" />
     <meta charset="UTF-8">
     <meta name = "viewport" content="width=device-width, initial-scale=1.0" /> 
@@ -22,7 +22,7 @@
     <meta name="DC.format" content="text/html" />
     <meta name="DC.identifier" content="https://octal.es" />
     <meta name="DC.publisher" content="octal.es" />
-    <meta name="DC.title" content="FocaMedia - Media Libary in Streaming" />
+    <meta name="DC.title" content="Foca MediaCenter - Media Libary in Streaming" />
     <meta name="DC.type" content="Text" />
 
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css">
@@ -30,10 +30,15 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-schemes.min.css">
     <link rel="stylesheet" type="text/css" href="/foca/assets/css/app.css">
     <style type="text/css">
-        #front-container {
+        .container {
             color: #F1F1F1;
-            padding-top: 110px;
             text-align: center;
+        }
+        #page-front {
+            padding-top: 110px;
+        }
+        #page-content {
+            padding-top: 70px;
         }
         .panel {
             text-align: left;
@@ -52,12 +57,30 @@
             right: 8px;
         }
         .cell-explain {
-            font-size: 18px;
+            font-size: 16px;
             background-color: rgba(0, 0, 0, 0.42);
         }
         .cell-explain p {
             margin: 12px;
             text-align: left;
+        }
+        .cell-explain a:link {
+            color: #ff9900;
+        }
+        .cell-explain a:visited {
+            color: #cc6600;
+        }
+        .cell-explain a:hover {
+            color: #ffcc00;
+        }
+        .cell-explain a:active {
+            color: #F1F1F1;
+        }
+        .image-overlay-dark {
+            background-color: rgba(0, 0, 0, 0.7) !important;
+        }
+        .image-overlay-dark p {
+            font-size: 18px;
         }
     </style>
 </head>
@@ -67,16 +90,18 @@
     
     <div class="app-bar darcula fixed-top" data-role="appbar">
         <div class="container">
-            <a class="app-bar-element" href="/foca/">FocaMedia</a>
+            <a class="app-bar-element" href="/foca/">Foca MediaCenter</a>
             <span class="app-bar-divider"></span>
             <ul class="app-bar-menu">
                 <li>
                     <a href="" class="dropdown-toggle">How it works</a>
                     <ul class="d-menu" data-role="dropdown">
-                        <li><a href="#">Client</a></li>
+                        <li><a href="/foca/client/">Client</a></li>
                         <li><a href="/foca/server/">Server</a></li>
                     </ul>
                 </li>
+                <li><a href="#">Tutorial</a></li>
+                <li><a href="#">Upcoming</a></li>
             </ul>
         </div>
     </div>
@@ -84,7 +109,7 @@
     <!-- Content -->
 
 
-    <div class="container page-content">
+    <div class="container">
 
         <?php
             $match = $router->match();
@@ -93,7 +118,8 @@
                 include 'views/'.$match['target'].'.php';
             }
             else {
-                echo 'Unable to find';
+                header("HTTP/1.0 404 Not Found");
+                include 'views/404.php';
             }
         ?>
 

@@ -1,20 +1,20 @@
-<div id="front-container" class="no-overflow">
+<div id="page-front" class="no-overflow">
 
-    <h1 style="font-size: 4.5rem; line-height: 1" class="text-shadow metro-title text-light">FocaMedia</h1>
+    <h1 style="font-size: 4.5rem; line-height: 1" class="text-shadow metro-title text-light">Foca MediaCenter</h1>
     <h2 class="padding30 sub-leader text-light fg-grayLighter">
-        A graphical easy to use media library, that allows you to watch your content even in your mobile!
+        A graphical easy to use media library, that tags and streams your movies / tvshows to your mobile.
     </h2>
 
     <div class="grid">
         <div class="row cells2">
-            <div class = "cell">
+            <div class="cell">
                 <div class="panel warning">
                     <div class="heading">
                         <span class="icon mif-display bg-darkOrange"></span>
                         <span class="title">Desktop / Server</span>
                     </div>
                     <div class="content padding10">
-                        <p>A graphical electron based application that crawls through your media library, recognises and compares the data with <a href="https://themoviedb.com">The Movie Database</a> API.</p>
+                        <p>A graphical electron based application that crawls through your media library, recognises and compares the data with <a href="https://themoviedb.org">The Movie Database</a> API.<br />&nbsp<a href="server/" class="place-right">more info...</a></p>
                         <a href="#" class="image-button primary">
                             Windows
                             <span class="icon mif-windows bg-darkCobalt"></span>
@@ -41,7 +41,7 @@
                         <span class="title">Mobile app</span>
                     </div>
                     <div class="content padding10">
-                        <p>A ionic implementation for client side, allows you to see in streaming your content.</p>
+                        <p>A ionic implementation for client side, allows you to see in streaming your content.<br /><br />&nbsp<a href="/foca/client/" class="place-right">more info...</a></p>
                         <a href="#" class="image-button primary">
                             Android
                             <span class="icon mif-android bg-darkCobalt"></span>
@@ -68,43 +68,3 @@
         </form>
     </div>
 </div>
-
-<!-- caracteristics -->
-<!--<div class ="tile-container no-margin-bottom" style = "padding-top: 10%">
-    <div class = "tile-wide bg-grayDark fg-grayLight" data-role ="tile">
-        <div class = "tile-content slide-right-2">
-            <div class = "slide">
-            </div>
-            <div class = "slide-over">
-                FocaMedia allows you to share all the media you want with the people around you
-            </div>
-            <span class = "tile-label">
-                Seals share their media
-            </span>
-        </div>
-    </div>
-    <div class = "tile-wide bg-grayDark fg-grayLight" data-role ="tile">
-        <div class = "tile-content slide-right-2">
-            <div class = "slide">
-            </div>
-            <div class = "slide-over">
-                FocaMedia works with Windows, IOS, Linux, Android and WindowsPhone
-            </div>
-            <span class = "tile-label">
-                Seals do not discriminate
-            </span>
-        </div>
-    </div>
-    <div class = "tile-wide bg-grayDark fg-grayLight" data-role ="tile">
-        <div class = "tile-content slide-right-2">
-            <div class = "slide">
-            </div>
-            <div class = "slide-over">
-                FocaMedia is easy to configure and intuitive to use
-            </div>
-            <span class = "tile-label">
-                Even a seal can do it
-            </span>
-        </div>
-    </div>
-</div>-->
