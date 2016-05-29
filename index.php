@@ -6,6 +6,7 @@
         array('GET', '/foca/', 'main'),
         array('GET', '/foca/server/', 'server'),
         array('GET', '/foca/client/', 'client'),
+        array('GET', '/foca/tutorial/', 'tutorial'),
     ));
 ?>
 
@@ -60,7 +61,8 @@
             font-size: 16px;
             background-color: rgba(0, 0, 0, 0.42);
         }
-        .cell-explain p {
+        .cell-explain p,
+        .cell-explain ol {
             margin: 12px;
             text-align: left;
         }
@@ -82,6 +84,9 @@
         .image-overlay-dark p {
             font-size: 18px;
         }
+        .dialog .container {
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -100,7 +105,7 @@
                         <li><a href="/foca/server/">Server</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Tutorial</a></li>
+                <li><a href="/foca/tutorial/">Tutorial</a></li>
                 <li><a href="#">Upcoming</a></li>
             </ul>
         </div>
@@ -141,4 +146,10 @@
             icon: "<span class='mif-warning'></span>"
         });
     });
+
+    function showDownloadDialog(url){
+        $('#dialog-download #dialog-download-btn').attr('href', url);
+        var dialog = $('#dialog-download').data('dialog');
+        dialog.open();
+    }
 </script>

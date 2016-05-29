@@ -15,10 +15,10 @@
                     </div>
                     <div class="content padding10">
                         <p>A graphical electron based application that crawls through your media library, recognises and compares the data with <a href="https://themoviedb.org">The Movie Database</a> API.<br />&nbsp<a href="server/" class="place-right">more info...</a></p>
-                        <a href="#" class="image-button primary">
+                        <button href="#" onclick="showDownloadDialog('/foca/download/FocaMediaCenter-win32-x64.zip')" class="image-button primary">
                             Windows
                             <span class="icon mif-windows bg-darkCobalt"></span>
-                        </a>
+                        </button>
                         <a href="#" class="image-button primary">
                             Mac OSX
                             <span class="icon mif-apple bg-darkCobalt"></span>
@@ -68,3 +68,15 @@
         </form>
     </div>
 </div>
+
+<!-- Dialogs -->
+
+<div data-role="dialog" id="dialog-download" class="padding20 dialog" data-close-button="true" data-windows-style="true" style="left: 0px; right: 0px; width: auto; height: auto; visibility: hidden; top: 286px;">
+    <div class="container">
+        <h1>This is a very under development version.</h1>
+        <p>
+            This software comes is it is, without any warranty. If you proceed you understand the risks.
+        </p>
+        <a id="dialog-download-btn" class="button danger place-right" href="#">Download</a>
+    </div>
+<span class="dialog-close-button"></span></div>

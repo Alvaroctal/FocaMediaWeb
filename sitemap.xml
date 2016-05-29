@@ -8,6 +8,14 @@
 
 <url>
   <loc>https://octal.es/foca/</loc>
-  <lastmod>2016-04-26T19:29:39+00:00</lastmod>
+</url>
+<url>
+  <loc>https://octal.es/foca/client/</loc>
+</url>
+<url>
+  <loc>https://octal.es/foca/server/</loc>
+</url>
+<url>
+  <loc>https://octal.es/foca/tutorial/</loc>
 </url>
 </urlset>

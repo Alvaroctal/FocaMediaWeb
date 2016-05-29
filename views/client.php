@@ -1,9 +1,9 @@
-<div id="front-container" class="no-overflow">
+<div id="page-content" class="no-overflow">
     <div class="grid">
         <div class="row cells12">
             <div class="cell colspan5 cell-explain">
                 <h3>Start</h3><hr />
-               <p>Connect with your local server by typing hist local ip and port and FocaMedia will remember it for you.</p>
+                <p>Connect with your local server by typing hist local ip and port and FocaMedia will remember it for you.</p>
             </div>
             <div class="cell colspan7">
                 <div class="image-container">
